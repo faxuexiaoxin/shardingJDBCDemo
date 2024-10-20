@@ -18,10 +18,9 @@ class UserMapperTest {
     void testInsert() {
         User user = new User();
         for (int i = 0; i < 10; i++) {
-//            user.setUserid(i);
             user.setUserName("法学小心鑫");
             user.setUserPassword("test");
-//            user.setUserPassword_("fsdfsdfs");
+            user.setUserPassword_("fsdfsdfs");
             userMapper.insert(user);
         }
     }
